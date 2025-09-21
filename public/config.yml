@@ -1,0 +1,204 @@
+backend:
+    name: github
+    repo: 1000tech/main-tauber-service
+    branch: main
+    base_url: /api/oauth
+    auth_endpoint: auth
+
+locale: 'de'
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+i18n:
+    structure: multiple_folders
+    locales: [de, en, ru]
+    default_locale: de
+
+collections:
+  - name: "home_de"
+    label: "Startseite (Deutsch)"
+    folder: "content/de"
+    path: "home"
+    create: false
+    filter:
+      field: "type"
+      value: "home"
+    fields:
+      - { label: "Typ", name: "type", widget: "hidden", default: "home" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
+      - label: "Leistungen"
+        name: "services"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "text" }
+
+  - name: "home_en"
+    label: "Startseite (Englisch)"
+    folder: "content/en"
+    path: "home"
+    create: false
+    filter:
+      field: "type"
+      value: "home"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "home" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Services Section Title", name: "services_title", widget: "string", required: false }
+      - label: "Services"
+        name: "services"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+  - name: "home_ru"
+    label: "Startseite (Russisch)"
+    folder: "content/ru"
+    path: "home"
+    create: false
+    filter:
+      field: "type"
+      value: "home"
+    fields:
+      - { label: "Тип", name: "type", widget: "hidden", default: "home" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Заголовок раздела – Услуги", name: "services_title", widget: "string", required: false }
+      - label: "Услуги"
+        name: "services"
+        widget: "list"
+        collapsed: false
+        fields:
+          - { label: "Иконка", name: "icon", widget: "string" }
+          - { label: "Заголовок", name: "title", widget: "string" }
+          - { label: "Описание", name: "description", widget: "text" }
+
+  - name: "pages_de"
+    label: "Seiten (Deutsch)"
+    folder: "content/de"
+    path: "{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    filter:
+      field: "type"
+      value: "page"
+    fields:
+      - { label: "Typ", name: "type", widget: "hidden", default: "page" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  - name: "pages_en"
+    label: "Seiten (Englisch)"
+    folder: "content/en"
+    path: "{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    filter:
+      field: "type"
+      value: "page"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "pages_ru"
+    label: "Seiten (Russisch)"
+    folder: "content/ru"
+    path: "{{slug}}"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    filter:
+      field: "type"
+      value: "page"
+    fields:
+      - { label: "Тип", name: "type", widget: "hidden", default: "page" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "menus"
+    label: "Menü"
+    description: "Hauptmenüeinträge je Sprache bearbeiten"
+    files:
+      - label: "Deutsch"
+        name: "menu_de"
+        file: "content/de/_menu.md"
+        fields:
+          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "E-Mail", name: "email", widget: "string", required: false }
+      - label: "Englisch"
+        name: "menu_en"
+        file: "content/en/_menu.md"
+        fields:
+          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "E-Mail", name: "email", widget: "string", required: false }
+      - label: "Russisch"
+        name: "menu_ru"
+        file: "content/ru/_menu.md"
+        fields:
+          - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
+          - label: "Menüpunkte"
+            name: "items"
+            widget: "list"
+            collapsed: false
+            summary: "{{fields.label}} → {{fields.path}}"
+            fields:
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
+          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "E-Mail", name: "email", widget: "string", required: false }
+
+  - name: "texts"
+    label: "Globale Texte"
+    description: "Kopf- und Fußzeilentexte der Website bearbeiten"
+    files:
+      - label: "Deutsch"
+        name: "texts_de"
+        file: "content/de/_texts.md"
+        fields:
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
+      - label: "Englisch"
+        name: "texts_en"
+        file: "content/en/_texts.md"
+        fields:
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
+      - label: "Russisch"
+        name: "texts_ru"
+        file: "content/ru/_texts.md"
+        fields:
+          - { label: "404 Titel", name: "error_404_title", widget: "string", hint: "Überschrift, die auf der 404-Fehlerseite angezeigt wird" }
+          - { label: "404 Beschreibung", name: "error_404_description", widget: "string", hint: "Erklärungstext für die 404-Fehlerseite" }
+          - { label: "404 Button-Text", name: "error_404_button", widget: "string", hint: "Beschriftung des Buttons auf der 404-Fehlerseite" }
