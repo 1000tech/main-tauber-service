@@ -1,0 +1,256 @@
+/* Mobile-first styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: #1a202c;
+    background-color: #ffffff;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00008B;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+header h1 {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+.burger {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 20px;
+    padding: 0;
+}
+
+.burger-line {
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+    border-radius: 1px;
+}
+
+.burger.open .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open .burger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    padding-top: 113px;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0 1.5rem;
+}
+
+.sidebar ul li {
+    margin: 0.25rem 0;
+}
+
+.sidebar ul li a {
+    color: #374151;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e2e8f0;
+    color: #00008B;
+}
+
+main {
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+#welcome {
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00008B;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.025em;
+}
+
+#welcome p {
+    font-size: 1.125rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 1rem;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #00008B;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.service-item {
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e0;
+}
+
+.service-item h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+}
+
+.service-item p {
+    color: #718096;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+#contact {
+    background-color: #f8fafc;
+    padding: 3rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.contact-details p {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #00008B;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+
+    .sidebar {
+        transform: translateX(0);
+    }
+
+    main {
+        margin-left: 280px;
+        margin-top: 0;
+        padding: 3rem 2rem;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #welcome h2 {
+        font-size: 2.5rem;
+    }
+
+    #welcome p {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 4rem 3rem;
+    }
+
+    #welcome {
+        padding: 5rem 0;
+    }
+}
