@@ -106,7 +106,6 @@ collections:
   - name: "pages_de"
     label: "Seiten (Deutsch)"
     folder: "content/de"
-    path: "{{slug}}"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -122,7 +121,6 @@ collections:
   - name: "pages_en"
     label: "Seiten (Englisch)"
     folder: "content/en"
-    path: "{{slug}}"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -138,7 +136,6 @@ collections:
   - name: "pages_ru"
     label: "Seiten (Russisch)"
     folder: "content/ru"
-    path: "{{slug}}"
     create: true
     slug: "{{slug}}"
     extension: "md"
