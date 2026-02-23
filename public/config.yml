@@ -92,6 +92,7 @@ collections:
     fields:
       - { label: "Typ", name: "type", widget: "hidden", default: "page" }
       - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Hero Untertitel", name: "hero_subtitle", widget: "string", required: false }
       - { label: "Inhalt", name: "body", widget: "markdown" }
 
   - name: "pages_en"
@@ -107,6 +108,7 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "page" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Subtitle", name: "hero_subtitle", widget: "string", required: false }
       - { label: "Content", name: "body", widget: "markdown" }
 
   - name: "pages_ru"
@@ -122,6 +124,7 @@ collections:
     fields:
       - { label: "Тип", name: "type", widget: "hidden", default: "page" }
       - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Подзаголовок Hero", name: "hero_subtitle", widget: "string", required: false }
       - { label: "Содержимое", name: "body", widget: "markdown" }
 
   - name: "menus"
