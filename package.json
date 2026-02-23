@@ -5,6 +5,8 @@
     "type": "module",
     "scripts": {
         "dev": "nuxt dev",
+        "clean": "rm -rf .nuxt .output .nitro",
+        "prebuild": "npm run clean",
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
