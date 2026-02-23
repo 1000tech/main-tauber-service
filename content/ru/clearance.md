@@ -1,6 +1,6 @@
 ---
 type: page
-title: Вывоз и очистка (Entrümpelung)
+title: Вывоз и очистка
 hero_subtitle: Быстро, аккуратно и надёжно
 ---
 
