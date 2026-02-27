@@ -6,12 +6,23 @@ const { data: menu } = useMenu()
 const { locale, availableLocales } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const localePath = useLocalePath()
+const emit = defineEmits<{
+	(e: 'navigate'): void
+}>()
+const localeCodes = computed(() => {
+	return availableLocales.map((item) => (typeof item === 'string' ? item : item.code))
+})
 
 const switchLocale = async (code: string) => {
 	if (code === locale.value) return
 	if (['de', 'en', 'ru'].includes(code)) {
+		emit('navigate')
 		await navigateTo(switchLocalePath(code as 'de' | 'en' | 'ru'))
 	}
+}
+
+const handleNavigate = () => {
+	emit('navigate')
 }
 </script>
 
@@ -19,7 +30,7 @@ const switchLocale = async (code: string) => {
 	<nav class="menu">
 		<ul class="menu-list">
 			<li v-for="it in menu?.items || []" :key="it.path">
-				<NuxtLink :to="localePath(it.path)">
+				<NuxtLink :to="localePath(it.path)" @click="handleNavigate">
 					<Icon v-if="it.icon" :name="it.icon" class="mr-2 flex-shrink-0" />
 					<span>{{ it.label }}</span>
 				</NuxtLink>
@@ -27,7 +38,7 @@ const switchLocale = async (code: string) => {
 		</ul>
 		<div class="locale-switcher">
 			<button
-				v-for="code in availableLocales"
+				v-for="code in localeCodes"
 				:key="code"
 				:class="['locale-btn', { active: code === locale }]"
 				type="button"

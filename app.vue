@@ -4,8 +4,14 @@ import logo from '~/assets/images/logo.svg?url'
 
 const isOpen = ref(false)
 const toggle = () => { isOpen.value = !isOpen.value }
+const closeMenu = () => { isOpen.value = false }
+const route = useRoute()
 const localePath = useLocalePath()
 const { data: siteTexts } = useSiteTexts()
+
+watch(() => route.fullPath, () => {
+    isOpen.value = false
+})
 
 useHead({
     link: [
@@ -18,14 +24,25 @@ useHead({
 <template>
     <div class="app-container">
         <header>
-            <button id="burger" class="burger" type="button" aria-label="Menu" @click="toggle">☰</button>
+            <button
+                id="burger"
+                class="burger"
+                :class="{ open: isOpen }"
+                type="button"
+                aria-label="Menu"
+                @click="toggle"
+            >
+                <span class="burger-line" />
+                <span class="burger-line" />
+                <span class="burger-line" />
+            </button>
             <NuxtLink :to="localePath('/')" class="logo-link">
                 <img :src="logo" alt="Dienstleistungen.Main-Tauber-Kreis Logo" width="60" height="60">
                 <span class="ml-4 text-[1.3rem] font-semibold">Dienstleistungen.Main-Tauber-Kreis</span>
             </NuxtLink>
         </header>
         <nav id="sidebar" class="sidebar" :class="{ open: isOpen }">
-            <Menu />
+            <Menu @navigate="closeMenu" />
         </nav>
         <main class="main-content">
             <NuxtPage />
@@ -85,8 +102,29 @@ header
     background none
     border none
     color #000
-    font-size 1.5rem
+    width 2rem
+    height 2rem
+    display inline-flex
+    flex-direction column
+    justify-content center
+    gap .28rem
     cursor pointer
+    padding 0
+
+    .burger-line
+        display block
+        width 1.4rem
+        height 2px
+        background #000
+        transition transform .25s ease, opacity .2s ease
+
+    &.open
+        .burger-line:nth-child(1)
+            transform translateY(6px) rotate(45deg)
+        .burger-line:nth-child(2)
+            opacity 0
+        .burger-line:nth-child(3)
+            transform translateY(-6px) rotate(-45deg)
     
     @media (min-width $screen-md)
         display none
