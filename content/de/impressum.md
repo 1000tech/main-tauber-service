@@ -6,13 +6,13 @@ hero_subtitle: Rechtliche Informationen und Haftungsausschluss
 ## IMPRESSUM
 
 **Inhaltlich Verantwortlicher gemäß § 6 MDStV**\
-Alexander Schleicher
+Anatoli Meiser
 
 **Steuernummer**\
-148/113/00285
+80088/28680
 
 **Registergericht**\
-Landeshauptstadt München
+Landesgericht Mannheim
 
 ## Allgemeine Geschäftsbedingungen (AGB)
 
