@@ -19,7 +19,7 @@ Landesgericht Mannheim
 **D.M-T-K UG(haftungsbeschränkt)**\
 Anatoli Meiser\
 Staudinger Str. 57\
-81735 München\
+97877 Wertheim\
 [+49 (0) 17647899067](tel:+4917647899067)\
 [info@main-tauber-service.de](mailto:info@main-tauber-service.de)
 
