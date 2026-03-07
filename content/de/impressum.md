@@ -16,7 +16,7 @@ Landesgericht Mannheim
 
 ## Allgemeine Geschäftsbedingungen (AGB)
 
-**SAP-Hausmeisterservice**\
+**D.M-T-K UG(haftungsbeschränkt)**\
 Alexander Schleicher\
 Staudinger Str. 57\
 81735 München\
