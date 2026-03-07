@@ -4,10 +4,10 @@ title: Renovierung und kleine Reparaturen
 hero_subtitle: Wenn’s schnell und ordentlich erledigt werden soll
 ---
 
-Kleine Reparaturen und Ausbesserungen sind zwar lästig, aber unerlässlich. Wir stehen Ihnen zur Seite, wann immer Sie uns brauchen. Ein kurzer Anruf genügt.
+Kleiner Reparaturen und Ausbesserungsarbeiten sind oft unvermeidlich, aber entscheidend für den Erhalt Ihrer Immobilie. Wir unterstützen Sie zuverlässig und flexilbel bei Ihren Anliegen fachgerecht und zuverlässig.
 
 ## Beispiele
 
-- Austausch von Armaturen und Beschlägen
-- Kleinreparaturen an Möbeln und Bauteilen
-- Silikonfugen erneuern, Dübelarbeiten, u. v. m.
+* Austausch von Armaturen und Beschlägen
+* Kleinreparaturen an Möbeln und Bauteilen
+* Silikonfugen erneuern, u. v. m.
