@@ -47,7 +47,7 @@ Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwische
 
 ### §5 Leistungsumfang und Pflichten
 
-5.1 Die vereinbarten Leistungen umfassen u. a. Gebäudereinigung, Gartenpflege, Winterdienst, Kontrollgänge und kleinere Reparaturen.\
+5.1 Die vereinbarten Leistungen umfassen u. a. Montageservice, Wartungsarbeiten, Renovierung und kleinere Reparaturen.\
 5.2 Der Dienstleister informiert den Auftraggeber regelmäßig über den Fortschritt der Arbeiten.\
 5.3 Bei unvorhergesehenen Leistungshindernissen wird der Auftraggeber unverzüglich informiert.\
 5.4 Änderungen des Leistungsumfangs bedürfen der schriftlichen Zustimmung beider Parteien.\
@@ -69,7 +69,7 @@ Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwische
 
 ### §8 Gerichtsstand und Rechtswahl
 
-Es gilt ausschließlich deutsches Recht. Gerichtsstand ist München, sofern der Auftraggeber Kaufmann ist oder keinen allgemeinen Gerichtsstand in Deutschland hat.
+Es gilt ausschließlich deutsches Bundesgerichtsamt Mannheim, sofern der Auftraggeber Kaufmann ist oder keinen allgemeinen Gerichtsstand in Deutschland hat.
 
 ### §9 Salvatorische Klausel
 
