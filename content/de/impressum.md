@@ -17,7 +17,7 @@ Landesgericht Mannheim
 ## Allgemeine Geschäftsbedingungen (AGB)
 
 **D.M-T-K UG(haftungsbeschränkt)**\
-Alexander Schleicher\
+Anatoli Meiser\
 Staudinger Str. 57\
 81735 München\
 [+49 (0) 17647899067](tel:+4917647899067)\
@@ -25,7 +25,7 @@ Staudinger Str. 57\
 
 ### §1 Geltungsbereich
 
-Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwischen SAP-Hausmeisterservice (nachfolgend „Dienstleister“) und seinen Kunden (nachfolgend „Auftraggeber“) im Rahmen der angebotenen Hausmeister- und Gebäudedienstleistungen. Abweichende Vereinbarungen in Einzelverträgen haben Vorrang vor diesen AGB.
+Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwischen D.M-T-K UG (haftungsbeschränkt) (nachfolgend „Dienstleister“) und seinen Kunden (nachfolgend „Auftraggeber“) im Rahmen der angebotenen Hausmeister- und Gebäudedienstleistungen. Abweichende Vereinbarungen in Einzelverträgen haben Vorrang vor diesen AGB.
 
 ### §2 Vertragsgegenstand
 
