@@ -6,7 +6,7 @@ hero_subtitle: Legal Information and Disclaimer
 ## IMPRESSUM
 
 **Content Responsible according to § 6 MDStV**\
-Alexander Schleicher
+Anatoli Meiser
 
 **Tax number**\
 148/113/00285

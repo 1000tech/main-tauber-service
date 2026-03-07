@@ -6,26 +6,26 @@ hero_subtitle: Rechtliche Informationen und Haftungsausschluss
 ## IMPRESSUM
 
 **Inhaltlich Verantwortlicher gemäß § 6 MDStV**\
-Alexander Schleicher
+Anatoli Meiser
 
 **Steuernummer**\
-148/113/00285
+80088/28680
 
 **Registergericht**\
-Landeshauptstadt München
+Landesgericht Mannheim
 
 ## Allgemeine Geschäftsbedingungen (AGB)
 
-**SAP-Hausmeisterservice**\
-Alexander Schleicher\
-Staudinger Str. 57\
-81735 München\
+**D.M-T-K UG(haftungsbeschränkt)**\
+Anatoli Meiser\
+Godmanchestrring 7A\
+97877 Wertheim\
 [+49 (0) 17647899067](tel:+4917647899067)\
 [info@main-tauber-service.de](mailto:info@main-tauber-service.de)
 
 ### §1 Geltungsbereich
 
-Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwischen SAP-Hausmeisterservice (nachfolgend „Dienstleister“) und seinen Kunden (nachfolgend „Auftraggeber“) im Rahmen der angebotenen Hausmeister- und Gebäudedienstleistungen. Abweichende Vereinbarungen in Einzelverträgen haben Vorrang vor diesen AGB.
+Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwischen D.M-T-K UG (haftungsbeschränkt) (nachfolgend „Dienstleister“) und seinen Kunden (nachfolgend „Auftraggeber“) im Rahmen der angebotenen Hausmeister- und Gebäudedienstleistungen. Abweichende Vereinbarungen in Einzelverträgen haben Vorrang vor diesen AGB.
 
 ### §2 Vertragsgegenstand
 
@@ -47,7 +47,7 @@ Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwische
 
 ### §5 Leistungsumfang und Pflichten
 
-5.1 Die vereinbarten Leistungen umfassen u. a. Gebäudereinigung, Gartenpflege, Winterdienst, Kontrollgänge und kleinere Reparaturen.\
+5.1 Die vereinbarten Leistungen umfassen u. a. Montageservice, Wartungsarbeiten, Renovierung und kleinere Reparaturen.\
 5.2 Der Dienstleister informiert den Auftraggeber regelmäßig über den Fortschritt der Arbeiten.\
 5.3 Bei unvorhergesehenen Leistungshindernissen wird der Auftraggeber unverzüglich informiert.\
 5.4 Änderungen des Leistungsumfangs bedürfen der schriftlichen Zustimmung beider Parteien.\
@@ -69,7 +69,7 @@ Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Verträge zwische
 
 ### §8 Gerichtsstand und Rechtswahl
 
-Es gilt ausschließlich deutsches Recht. Gerichtsstand ist München, sofern der Auftraggeber Kaufmann ist oder keinen allgemeinen Gerichtsstand in Deutschland hat.
+Es gilt ausschließlich deutsches Bundesgerichtsamt Mannheim, sofern der Auftraggeber Kaufmann ist oder keinen allgemeinen Gerichtsstand in Deutschland hat.
 
 ### §9 Salvatorische Klausel
 
