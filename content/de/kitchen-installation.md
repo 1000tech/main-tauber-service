@@ -4,10 +4,9 @@ title: Küchenmontage
 hero_subtitle: Aufbau und Anschluss Ihrer neuen Küche
 ---
 
-Eine neue Küche? Wir übernehmen den Aufbau und den Anschluss der Geräte für Ihre neue Küche.
+Eine neue Küche? Wir übernehmen die fachgerechte Montage - schnell, zuverlässig und termingerecht, damit Ihre Küche an Ihrem Platz steht.
 
 ## Inklusive nach Absprache
 
-- Ausrichten und Befestigen der Küchenmöbel
-- Einbau von Arbeitsplatten
-- Anschluss von Geräten (nach Zulassung)
+* Ausrichten und Befestigen der Küchenmöbel
+* Einbau von Arbeitsplatten
