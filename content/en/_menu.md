@@ -11,9 +11,4 @@ items:
   - { label: Furniture Assembly, path: furniture-assembly, icon: mdi:sofa }
   - { label: Kitchen Installation, path: kitchen-installation, icon: mdi:stove }
   - { label: Hourly Support, path: hourly-support, icon: mdi:clock-outline }
-contact_title: Contact
-contact_subtitle: Look forward to your message
-contact_icon: heroicons-solid:phone
-phone: +49 (0) 17647899067
-email: info@main-tauber-service.de
 ---

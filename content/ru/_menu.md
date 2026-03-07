@@ -11,9 +11,4 @@ items:
   - { label: Сборка мебели, path: furniture-assembly, icon: mdi:sofa }
   - { label: Монтаж кухни, path: kitchen-installation, icon: mdi:stove }
   - { label: Почасовая помощь, path: hourly-support, icon: mdi:clock-outline }
-contact_title: Контакты
-contact_subtitle: Будем рады вашему сообщению
-contact_icon: heroicons-solid:phone
-phone: +49 (0) 17647899067
-email: info@main-tauber-service.de
 ---

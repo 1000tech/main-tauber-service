@@ -13,10 +13,6 @@ export type MenuData = {
 export type MenuContent = MenuData & {
     services_title?: string
     services_icon?: string
-    contact_title?: string
-    contact_icon?: string
-    phone?: string
-    email?: string
 }
 
 export const useMenu = (): AsyncData<MenuContent | undefined, NuxtError<unknown> | undefined> => {

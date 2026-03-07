@@ -1,3 +1,4 @@
+## Keep /public/admin/config.yml and /public/config.yml in sync.
 backend:
     name: github
     repo: 1000tech/main-tauber-service
@@ -165,9 +166,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
       - label: "Englisch"
         name: "menu_en"
         file: "content/en/_menu.md"
@@ -181,9 +179,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
       - label: "Russisch"
         name: "menu_ru"
         file: "content/ru/_menu.md"
@@ -197,9 +192,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
 
   - name: "texts"
     label: "Globale Texte"

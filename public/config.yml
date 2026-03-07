@@ -1,3 +1,4 @@
+## Keep /public/admin/config.yml and /public/config.yml in sync.
 backend:
     name: github
     repo: 1000tech/main-tauber-service
@@ -27,6 +28,9 @@ collections:
     fields:
       - { label: "Typ", name: "type", widget: "hidden", default: "home" }
       - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Hero Titel", name: "hero_title", widget: "string", required: false }
+      - { label: "Hero Beschreibung", name: "hero_description", widget: "text", required: false }
+      - { label: "Hero Button-Text", name: "hero_cta", widget: "string", required: false }
       - { label: "Abschnittstitel – Leistungen", name: "services_title", widget: "string", required: false }
       - label: "Leistungen"
         name: "services"
@@ -36,6 +40,11 @@ collections:
           - { label: "Icon", name: "icon", widget: "string" }
           - { label: "Titel", name: "title", widget: "string" }
           - { label: "Beschreibung", name: "description", widget: "text" }
+          - { label: "Pfad", name: "path", widget: "string", required: false }
+      - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
+      - { label: "Kontakt Beschreibung", name: "contact_description", widget: "text", required: false }
+      - { label: "Kontakt Telefon", name: "contact_phone", widget: "string", required: false }
+      - { label: "Kontakt E-Mail", name: "contact_email", widget: "string", required: false }
 
   - name: "home_en"
     label: "Startseite (Englisch)"
@@ -48,6 +57,9 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "home" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Hero Title", name: "hero_title", widget: "string", required: false }
+      - { label: "Hero Description", name: "hero_description", widget: "text", required: false }
+      - { label: "Hero Button Text", name: "hero_cta", widget: "string", required: false }
       - { label: "Services Section Title", name: "services_title", widget: "string", required: false }
       - label: "Services"
         name: "services"
@@ -57,6 +69,11 @@ collections:
           - { label: "Icon", name: "icon", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: "Path", name: "path", widget: "string", required: false }
+      - { label: "Contact Title", name: "contact_title", widget: "string", required: false }
+      - { label: "Contact Description", name: "contact_description", widget: "text", required: false }
+      - { label: "Contact Phone", name: "contact_phone", widget: "string", required: false }
+      - { label: "Contact Email", name: "contact_email", widget: "string", required: false }
 
   - name: "home_ru"
     label: "Startseite (Russisch)"
@@ -69,6 +86,9 @@ collections:
     fields:
       - { label: "Тип", name: "type", widget: "hidden", default: "home" }
       - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Заголовок (Hero)", name: "hero_title", widget: "string", required: false }
+      - { label: "Описание (Hero)", name: "hero_description", widget: "text", required: false }
+      - { label: "Текст кнопки (Hero)", name: "hero_cta", widget: "string", required: false }
       - { label: "Заголовок раздела – Услуги", name: "services_title", widget: "string", required: false }
       - label: "Услуги"
         name: "services"
@@ -78,6 +98,11 @@ collections:
           - { label: "Иконка", name: "icon", widget: "string" }
           - { label: "Заголовок", name: "title", widget: "string" }
           - { label: "Описание", name: "description", widget: "text" }
+          - { label: "Путь", name: "path", widget: "string", required: false }
+      - { label: "Контакты — Заголовок", name: "contact_title", widget: "string", required: false }
+      - { label: "Контакты — Описание", name: "contact_description", widget: "text", required: false }
+      - { label: "Контакты — Телефон", name: "contact_phone", widget: "string", required: false }
+      - { label: "Контакты — E‑mail", name: "contact_email", widget: "string", required: false }
 
   - name: "pages_de"
     label: "Seiten (Deutsch)"
@@ -141,9 +166,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
       - label: "Englisch"
         name: "menu_en"
         file: "content/en/_menu.md"
@@ -157,9 +179,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
       - label: "Russisch"
         name: "menu_ru"
         file: "content/ru/_menu.md"
@@ -173,9 +192,6 @@ collections:
             fields:
               - { label: "Bezeichnung", name: "label", widget: "string" }
               - { label: "Pfad", name: "path", widget: "string", hint: "Der führende / wird automatisch ergänzt" }
-          - { label: "Kontakt Titel", name: "contact_title", widget: "string", required: false }
-          - { label: "Telefon", name: "phone", widget: "string", required: false }
-          - { label: "E-Mail", name: "email", widget: "string", required: false }
 
   - name: "texts"
     label: "Globale Texte"

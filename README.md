@@ -47,7 +47,7 @@ This starts a proxy server on port 8081 that allows Decap CMS to edit local file
 
 ### Local Development Mode
 
-With `local_backend: true` in `config.yml` and the proxy server running:
+With `local_backend: true` in `public/admin/config.yml` and the proxy server running:
 
 - Click **"Login"** in the admin panel (no GitHub authentication needed)
 - Edit content directly, changes save to local files
@@ -66,7 +66,7 @@ For production deployment, you'll need GitHub OAuth:
    - `GITHUB_CLIENT_ID` = your OAuth app client ID
    - `GITHUB_CLIENT_SECRET` = your OAuth app client secret
    - `OAUTH_REDIRECT_URL` = `https://your-app.vercel.app` (optional)
-3. **For production, disable local backend in `config.yml`:**
+3. **For production, disable local backend in `public/admin/config.yml`:**
 
    ```yaml
    # Comment out for production:
@@ -94,7 +94,7 @@ This project is **fully compatible** with Vercel:
 ### Important Notes for Production:
 
 - **OAuth endpoints work on Vercel** - the custom `/api/oauth/*` handlers are built for Vercel's serverless functions
-- **Disable local_backend** in production by commenting out `local_backend: true` in `config.yml`
+- **Disable local_backend** in production by commenting out `local_backend: true` in `public/admin/config.yml`
 - **The proxy server is NOT needed** in production - it's only for local development
 - **Content edits go directly to GitHub** - changes are committed to your repo automatically
 
@@ -115,6 +115,9 @@ content/
 public/admin/
 ├── index.html           # Decap CMS interface
 └── config.yml           # CMS configuration
+
+public/
+└── config.yml           # Compatibility mirror of the CMS configuration
 
 server/api/oauth/
 ├── auth.get.ts          # GitHub OAuth initiation
