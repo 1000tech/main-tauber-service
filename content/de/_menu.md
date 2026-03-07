@@ -33,5 +33,5 @@ contact_title: Kontakt
 contact_subtitle: Freuen uns auf Ihre Nachricht
 contact_icon: heroicons-solid:phone
 phone: +49 (0) 17647899067
-email: dmtk.gmx.de
+email: d.mtk.gmx.de
 ---
